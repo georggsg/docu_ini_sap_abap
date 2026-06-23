@@ -16,30 +16,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Space Grotesk
+      body: Inter
+      code: JetBrains Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#fbfdfc"
+        lightgray: "#e3e8e5"
+        gray: "#9db5ab"
+        darkgray: "#3d4a44"
+        dark: "#1f2a25"
+        secondary: "#2f7d5b"
+        tertiary: "#5fae87"
+        highlight: "rgba(95, 174, 135, 0.15)"
+        textHighlight: "#a7e8c488"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#161a18"
+        lightgray: "#2c322f"
+        gray: "#5e6f67"
+        darkgray: "#d2dad6"
+        dark: "#e8efeb"
+        secondary: "#5fae87"
+        tertiary: "#8fd4ad"
+        highlight: "rgba(95, 174, 135, 0.15)"
+        textHighlight: "#3a7a5688"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -262,7 +262,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
       theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
