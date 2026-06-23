@@ -1,0 +1,83 @@
+---
+tags:
+  - abap
+  - sap-hr
+  - formacion
+  - moc
+aliases: [Memoria SAP HR, Índice]
+---
+
+# Índice — Memoria formación SAP HR
+
+> [!info] Guía de referencia ABAP / SAP HCM
+> Pensada para perfiles que se inician en ABAP. Cada bloque es una nota independiente; usa el grafo y los enlaces para navegar.
+
+## Bloques
+
+- [[01 - Introducción|Introducción]]
+- [[02 - Elementos básicos (Transacciones)|Elementos básicos (Transacciones)]]
+  - [[02 - Elementos básicos (Transacciones)#SE11 (Diccionario de datos)|SE11 (Diccionario de datos)]]
+  - [[02 - Elementos básicos (Transacciones)#SE37 (Módulo de funciones)|SE37 (Módulo de funciones)]]
+  - [[02 - Elementos básicos (Transacciones)#SE38 (Report / Programa)|SE38 (Report / Programa)]]
+  - [[02 - Elementos básicos (Transacciones)#SE93 (Código de transacción)|SE93 (Código de transacción)]]
+  - [[02 - Elementos básicos (Transacciones)#SE51 (Screen Painter / Creación de pantallas)|SE51 (Screen Painter / Creación de pantalla)]]
+  - [[02 - Elementos básicos (Transacciones)#SE41 (Estados / Status)|SE41 (Estados / Status)]]
+  - [[02 - Elementos básicos (Transacciones)#PA20 (Visualizar infotipos PA)|PA20 (Visualizar infotipos PA)]]
+  - [[02 - Elementos básicos (Transacciones)#PA30 (Crear / Modificar infotipos)|PA30 (Crear / Modificar infotipos).]]
+  - [[02 - Elementos básicos (Transacciones)#SMARTFORMS|SMARTFORMS]]
+* [[03 - Declaración de variables y constantes|Declaración de variables y constantes]]
+  * [[03 - Declaración de variables y constantes#Variables|Variables]]
+  * [[03 - Declaración de variables y constantes#Constantes|Constantes]]
+- [[04 - Tipos (TYPES)|Tipos (TYPES)]]
+  - [[04 - Tipos (TYPES)#Tipos primitivos|Tipos primitivos]]
+  - [[04 - Tipos (TYPES)#Tipos compuestos|Tipos compuestos]]
+- [[06 - Operadores y control de flujo|Operadores y control de flujo]]
+  - [[06 - Operadores y control de flujo#IF: Condicional|IF: Condicional]]
+  - [[06 - Operadores y control de flujo#CASE|CASE]]
+  - [[06 - Operadores y control de flujo#Bucles|Bucles]]
+- [[05 - Variables de sistema|Variables de sistema]]
+- [[07 - Eventos (report)|Eventos (report)]]
+  - [[07 - Eventos (report)#Eventos de la pantalla de selección (INITIALIZATION/AT SELECTION-SCREEN ON/ AT SELECTION-SCREEN)|Eventos de la pantalla de selección (INITIALIZATION/AT SELECTION-SCREEN ON/ AT SELECTION-SCREEN)]]
+  - [[07 - Eventos (report)#Eventos de procesamiento (START-OF-SELECTION / END-OF-SELECTION)|Eventos de procesamiento (START-OF-SELECTION / END-OF-SELECTION)]]
+  - [[07 - Eventos (report)#Eventos de lista e interactividad (TOP-OF-PAGE / AT LINE-SELECTION / AT USER-COMMAND)|Eventos de lista e interactividad (TOP-OF-PAGE / AT LINE-SELECTION / AT USER-COMMAND)]]
+  - [[07 - Eventos (report)#Esqueleto mínimo de report|Esqueleto mínimo de report]]
+- [[08 - Pantalla de selección|Pantalla de selección (PARAMETERS / SELECT-OPTIONS)]]
+  - [[08 - Pantalla de selección#Bases de datos y tablas internas|Bases de datos y tablas internas]]
+  - [[08 - Pantalla de selección#Operaciones con tablas internas|Operaciones con tablas internas]]
+- [[09 - Modularización|Modularización (FORM / PERFORM, INCLUDES, módulos de funciones)]]
+  - [[09 - Modularización#Subrutinas (FORM/PERFORM)|Subrutinas (FORM/PERFORM)]]
+  - [[09 - Modularización#Includes|Includes]]
+- [[10 - Salidas de datos (WRITE y ALV)|Salidas de datos (WRITE y ALV)]]
+  - [[10 - Salidas de datos (WRITE y ALV)#Write|Write]]
+  - [[10 - Salidas de datos (WRITE y ALV)#Concatenate|Concatenate]]
+  - [[10 - Salidas de datos (WRITE y ALV)#ALV (ABAP List Viewer)|ALV (ABAP List Viewer)]]
+* [[11 - Programación de dialogo (ModulePool y Dynpros)|Programación de dialogo (ModulePool y Dynpros]]
+  * [[11 - Programación de dialogo (ModulePool y Dynpros)#Module Pool|Module Pool]]
+  * [[11 - Programación de dialogo (ModulePool y Dynpros)#Dynpros|Dynpros (PBO / PAI)]]
+  * [[11 - Programación de dialogo (ModulePool y Dynpros)#Estados / Status|Estados / Status]]
+* [[12 - Funciones y BAPIs estándar| Funciones y BAPIs estándar]]
+  - [[12 - Funciones y BAPIs estándar#Funciones HR.| Funciones HR]]
+    - [[12 - Funciones y BAPIs estándar#HR_READ_INFOTYPE|HR_READ_INFOTYPE]]
+    - [[12 - Funciones y BAPIs estándar#HR_INFOTYPE_OPERATION|HR_INFOTYPE_OPERATION]]
+    - [[12 - Funciones y BAPIs estándar#BAPI_EMPLOYEE_ENQUEUE|BAPI_EMPLOYEE_ENQUEUE]]
+    - [[12 - Funciones y BAPIs estándar#BAPI_EMPLOYEE_DEQUEUE|BAPI_EMPLOYEE_DEQUEUE]]
+  - [[12 - Funciones y BAPIs estándar#Salida de datos| Salida de datos]]
+    - [[10 - Salidas de datos (WRITE y ALV)#ALV (ABAP List Viewer)| ALV]]
+    - [[12 - Funciones y BAPIs estándar#SSF_FUNCTION_MODULE_NAME|SSF_FUNCTION_MODULE_NAME]]
+  - [[12 - Funciones y BAPIs estándar#Interfaz de usuario|Interfaz de usuario]]
+- [[13 - HR - HCM Infotipos| HR / HCM infotipos]]
+  * [[13 - HR - HCM Infotipos#Infotipos|Infotipos]]
+  * [[13 - HR - HCM Infotipos#Subtipos|Subtipos]]
+  * [[13 - HR - HCM Infotipos#Lectura de infotipos|Lectura de infotipos]]
+  * [[13 - HR - HCM Infotipos#Modificación de infotipos|Modificación de infotipos]]
+  * [[13 - HR - HCM Infotipos#Bases de datos lógica (LDB)|Bases de datos lógica (LDB)]]
+  * [[13 - HR - HCM Infotipos#PNP|PNP]]
+  * [[13 - HR - HCM Infotipos#Temporalidad|Temporalidad]]
+  * [[13 - HR - HCM Infotipos#ABAP clásico vs ABAP moderno|ABAP clásico vs ABAP moderno]]
+* [[14 - SmartForms - AdobeForms| SmartForms / AdobeForms]]
+* [[15 - Debugger|Debugger]]
+  * [[15 - Debugger#Puntos de ruptura|Puntos de ruptura]]
+  * [[02 - Elementos básicos (Transacciones)#Elementos básicos (Transacciones)|Activar el debugger sobre una transacción]]
+  * [[15 - Debugger#Movimiento por el código (teclas de paso)|Movimiento por el código (teclas de paso)]]
+  * [[15 - Debugger#Inspeccionar y modificar variables|Inspeccionar y modificar variables]]
+  
