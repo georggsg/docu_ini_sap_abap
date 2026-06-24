@@ -45,40 +45,40 @@ Los datos se pueden mediante LSMW se pueden grabar de distintos modos:
 
 Una vez estemos dentro del objeto tendremos que completar una lista de pasos hasta llegar a la ejecución final. A través de esta lista iremos estableciendo las estructuras, los campos, ficheros etc... que irán dando forma al proceso final.
 
-![[Memoria SAP HR (vault)/images/Pasted image 20260623173939.png]]
+![[Pasted image 20260623173939.png]]
 Cuando terminemos de configurar cada paso, automáticamente nos saltará al siguiente paso.
 1. **Define Object Attributes**: En este paso eligiremos el método de carga *(Batch Input/Direct Input, Batch Input, BAPI, IDoc)*.
 Si elegimos Batch Input tendremos que crear una grabación, que consiste en ejecutar una vez la ntransacción manualmente mientras se registra todos los campos y pasos. Cuando ejecutemos el proceso se repetirá la misma secuencia por cada registro del fichero.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624084241.png]]
+![[Pasted image 20260624084241.png]]
 El segundo icono de la derecha, nos abrira una pantalla en la que nos mostrará las grabaciones que hay. Si no existen podemos crear una desde esa misma pantalla desde la barra superior con el botón de *create record*.
 Cuando tengamos la grabación creada veremos un árbol con todos los pasos que seguirá ésta para realizar el proceso. En los campos que vamos a añadir datos veremos otro rectángulo al lado del valor que hemos introducido para crear la grabación. Pondremos el cursor en el rectángulo vacío y le daremos al botón de *Default* en la barra superior.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624084654.png]]
+![[Pasted image 20260624084654.png]]
 
 Al volver a la pantalla de selección del método de carga al presionar el botón F4 nos rellenará el campo con automáticamente con la grabación que hemos creado. Si tuviésemos mas grabaciones nos abrirá una ventana en la que podremos seleccionar la que queramos.
 Al elegir un método de carga, la lista de opciones se actualiza en función del método elegido, en este caso, lo haremos con grabación de Batch Input.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624084954.png]]
+![[Pasted image 20260624084954.png]]
 2. **Define Source Structures**: Definimos las estructuras que vamos a utilizar. Podemos crear una nueva ya que solo creas la estructura o podemos utilizar una ya creada.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624085456.png]]
+![[Pasted image 20260624085456.png]]
 3. **Define Source Fields**: Dentro de cada estructura, definiremos los campos que la van a formar. Si hemos declarado una estructura existente en el paso anterior, nos aparecerán los campos directamente. 
    Tendremos que indicar el nombre del campo, una etiqueta su longitud y el tipo.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624085752.png]]
-![[Memoria SAP HR (vault)/images/Pasted image 20260624085704.png]]
+![[Pasted image 20260624085752.png]]
+![[Pasted image 20260624085704.png]]
 4. **Define Structure Relations**: Relacionamos las estructuras que hemos creado con la estructura de la grabación.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624085949.png]]
+![[Pasted image 20260624085949.png]]
 5. **Define Field Mapping and Conversion Rules**: Aquí realizaremos el mapeo. Enlazaremos cada campo de nuestro fichero, con su campo del sistema de SAP. También aplicaremos conversiones como, formatos de fecha, valores fijos, mayúsculas etc...
    Para agregar cada enlace, pondremos el cursor en cada campo y accionaremos el botón de la barra superior *Source Fields*. Se puede hacer de uno en uno, pero si tenemos muchos campos, en la barra de herramientas en *Extras* tenemos una opción que es *Auto-Field Mapping* el cual nos enlazará cada campo con el suyo. Lo conveniente es que los campos estén declarados en el mismo orden que esta en el documento que LSMW va a leer.
 
-![[Memoria SAP HR (vault)/images/Pasted image 20260624090653.png]]
+![[Pasted image 20260624090653.png]]
 6. **Define Fixed Values, Translations, User-Defined Routines**: Permite definir valores fijos, traducciones y rutinas propias reutilizables en el mapeo. En migraciones encillas no suele usarse.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624090836.png]]
+![[Pasted image 20260624090836.png]]
 7. **Specify Files**: Indicamos en que ruta se encuentra el fichero que vamos a cargar, podemos cargarlo desde nuestro ordenador o desde el servidor.
    Una vez elegido el fichero y puesto su nombre, tendremos que elegir el delimitador, esto quiere decir de que forma están los campos separados uno de otro. SAP nos da a elegir entre, **No Separator, Tabulator, Semi-Colon, Comma, Blanks, Other (personalizado)**. En el último mencionado tendremos que indicarle que se utiliza de delimitador. También hay que indicarle si nuestro archivo tiene cabecera o no.
    *Field names at start of file*, tiene cabecera.
    *Field order matches source structure definition*, no tiene cabecera.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624091403.png]]
-![[Memoria SAP HR (vault)/images/Pasted image 20260624091437.png]]
+![[Pasted image 20260624091403.png]]
+![[Pasted image 20260624091437.png]]
 8. **Assign Files**: Asignamos el fichero que vamos a cargar a la estructura que hemos creado en el paso 2.
-![[Memoria SAP HR (vault)/images/Pasted image 20260624091544.png]]
+![[Pasted image 20260624091544.png]]
 9. **Read Data**: La LSMW lee el fichero y carga su contenido en memoria. Aquí comprobaremos cuántos registros se han leído.
 ![[Pasted image 20260624091703.png]]
 En esta pantalla solo tenemos que ejecutar.
