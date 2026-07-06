@@ -1,12 +1,12 @@
-\---
+---
 
-title: Documentación SAP HR / HCM
+title: Documentación SAP HCM
 
-\---
+---
 
 
 
-Bienvenido a la documentación de formación SAP HR / HCM.
+Bienvenido a la documentación de SAP HCM.
 
 
 
